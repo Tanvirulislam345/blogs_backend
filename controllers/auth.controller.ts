@@ -41,7 +41,7 @@ export const login = async (req: Request, res: Response) => {
   } catch (error) {
     throw {
       status: 400,
-      message: error.message,
+      message: error,
     };
   }
 };
